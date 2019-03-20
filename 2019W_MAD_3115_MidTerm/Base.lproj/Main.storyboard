@@ -65,6 +65,7 @@
                     <connections>
                         <outlet property="emailid" destination="EGn-ak-e6K" id="4b2-gH-Bgo"/>
                         <outlet property="pass" destination="Jyu-nj-prK" id="989-hj-UDV"/>
+                        <outlet property="rememberme" destination="TVH-Xq-ocB" id="xaz-8A-pU1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
