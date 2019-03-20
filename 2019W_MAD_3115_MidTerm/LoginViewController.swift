@@ -10,11 +10,16 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var emailid: UITextField!
+    @IBOutlet weak var pass: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func signin(_ sender: Any) {
+    }
+    
 }
 
