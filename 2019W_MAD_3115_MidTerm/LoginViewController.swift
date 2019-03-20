@@ -18,18 +18,33 @@ class LoginViewController: UIViewController {
      let userDefault = UserDefaults.standard
        if let email = userDefault.string(forKey: "Userid"){
             emailid.text =  email
-            if let password = userDefault.string(forKey: "userPassword"){
+            if let password = userDefault.string(forKey: "userPass"){
                 pass.text =  password
             }
             rememberme.isOn = true
+    
         }
         // Do any additional setup after loadi
         // Do any additional setup after loading the view, typically from a nib.
     }
   
     
-    @IBAction func signin(_ sender: Any) {
+    @IBAction func signin(_ sender: Any)
+    {
+        let email = emailid.text
+        let password = pass.text
+        if(email == "aman@gmail.com" && password == "maan"){
+            let userDefault = UserDefaults.standard
+            if rememberme.isOn{
+                userDefault.set(email, forKey: "userEmail")
+                userDefault.set(password, forKey: "userPass")
+            }
+            else {
+        userDefault.removeObject(forKey: "userEmail")
+                userDefault.removeObject(forKey: "Userpass")
+            }
     }
     
 }
 
+}
